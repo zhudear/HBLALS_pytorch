@@ -1,0 +1,58 @@
+{
+  "task": "HBLALS" //
+  , "n_channels": 3
+  ,"path": {
+    "root": "HBLALS"
+  }
+  , "datasets": {
+    "trainMIT": {
+      "name": "trainMIT"
+      , "dataset_type": "low-light"
+      , "dataroot_L": "./data/MIT_train.txt"
+      , "H_size": 128 //128 //96 | 128 | 192
+    ,"use_crop": true,
+      "H_path": "G:/zgj/1/"
+    ,"L_path": "G:/zgj/1/"
+    ,"use_augment": true
+      , "dataloader_shuffle": true
+      , "dataloader_num_workers": 1
+      , "dataloader_batch_size": 1
+    },
+  "trMIT": {
+      "name": "trainMIT"
+      , "dataset_type": "low-light"
+      , "dataroot_L": "./data/MIT_tr.txt"
+      , "H_size": 128
+    ,"use_crop": true,
+      "H_path": "G:/zgj/1/"
+    ,"L_path": "G:/zgj/1/"
+    ,"use_augment": true
+      , "dataloader_shuffle": true
+      , "dataloader_num_workers": 1
+      , "dataloader_batch_size": 1
+    }
+, "valMIT": {
+      "name": "search_MIT"
+      , "dataset_type": "low-light"
+      ,"H_path": "G:/zgj/1/"
+     ,"L_path": "G:/zgj/1/",
+    "dataroot_L": "./data/MIT_val.txt"
+      , "H_size": 128 //96 | 128 | 192
+      ,"use_crop": true
+    ,"use_augment": true
+      , "dataloader_shuffle": true
+      , "dataloader_num_workers": 1
+      , "dataloader_batch_size": 1
+    },
+    "testMIT": {
+      "name": "test_MIT"
+      , "dataset_type": "low-light",
+      "H_path": "G:/zgj/1/"
+    ,"L_path": "G:/zgj/1/"
+      , "dataroot_L": "./data/MIT_test.txt"
+      ,"dataloader_num_workers": 1
+      , "dataloader_batch_size": 1
+    }
+  }
+
+}
